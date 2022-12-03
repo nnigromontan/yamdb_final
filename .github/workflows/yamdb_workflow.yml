@@ -66,7 +66,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull nigromontan/infra_actions
+          sudo docker pull nigromontan/yamdb_final
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 nigromontan/yamdb_final
