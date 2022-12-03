@@ -2,9 +2,9 @@
 
 from django.utils import timezone
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
+
 from .utils import check_username_not_me
 
 
