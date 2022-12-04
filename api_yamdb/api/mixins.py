@@ -1,4 +1,4 @@
-"""Миксины приложения api."""
+"""Миксины приложения api1."""
 
 from rest_framework import mixins, viewsets
 
