@@ -86,7 +86,7 @@ class ConfirmUser(APIView):
 
 
 class UserViewSet(viewsets.ModelViewSet):
-    """Представление для обработки объектов User."""
+    """Представление для обработки объектов модели User."""
 
     queryset = User.objects.all().order_by('id')
     serializer_class = UserSerializer
